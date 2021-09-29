@@ -1,0 +1,44 @@
+/* Selectores */
+
+/* Universal */
+
+* {
+  color: red;
+}
+
+/* de tipo */
+
+h1 {
+  color: black;
+}
+
+/* Clases */
+
+.parrafo {
+  font-size: 30px;
+}
+
+/* Id (Debe ser unico)*/
+
+#titulo {
+  color: aqua;
+}
+
+/* Por atributo */
+
+[type=text] {
+  color: palevioletred;
+}
+
+/* Descendete */
+
+section p {
+  font-weight: bold;
+  color: black;
+}
+
+/* Pseudoclases */
+
+section p:hover {
+  color: blue;
+}
