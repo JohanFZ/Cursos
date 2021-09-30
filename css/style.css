@@ -78,8 +78,8 @@
 
 
 div {
-  width: 100px;
-  height: 100px;
+  /* width: 100px; */
+  /* height: 100px; */
   /* margin: auto; */
   /* border: 10px solid blue; */
   /* outline: 10px solid blue; */
@@ -132,6 +132,62 @@ div {
 }
 
 /* Position: Absolute */
+
+/* .content {
+  position: relative;
+  width: 500px;
+  height: 500px;
+  background: green;
+  margin: auto;
+}
+.content div {
+  position: absolute;
+}
+
+.caja1 {
+  background: yellow;
+  top: 0;
+}
+
+.caja2 {
+  background: red;
+  position: absolute;
+  right: 0;
+}
+
+.caja3 {
+  background: blue;
+  bottom: 0;
+}
+
+.caja4 {
+  background: orange;
+  right: 0;
+  bottom: 0;
+}
+
+.caja5 {
+  /* margin: 200px;
+  background: aqua;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+} */
+
+/* Position: Fixed */
+
+div {
+  font-size: 40px;
+}
+
+.content-fixed {
+  position: fixed;
+  background: red;
+  opacity: 0.2;
+}
+
 
 
 
