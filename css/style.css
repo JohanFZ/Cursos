@@ -77,13 +77,13 @@
 }
 
 
-div {
-  /* width: 100px; */
-  /* height: 100px; */
-  /* margin: auto; */
-  /* border: 10px solid blue; */
-  /* outline: 10px solid blue; */
-}
+/* div {
+  width: 100px;
+  height: 100px;
+  margin: auto;
+  border: 10px solid blue;
+  outline: 10px solid blue;
+} */
 
 /* .caja1{
   background: red;
@@ -225,7 +225,7 @@ font-size: 40px;
 
 /* Pseudoelementos */
 
-.contenedor {
+/* .contenedor {
   padding: 20px;
 }
 
@@ -258,8 +258,49 @@ b::before {
 
 b::after {
   content: ' Forero Orozco';
-}
+} */
 
 /* Pseudoclases */
 
+/* .contenedor{
+  margin: 20px;
+}
 
+.contenedor .texto {
+  padding: 10px;
+  background: red;
+  transition: all 2s, background 1s;
+}
+
+.contenedor .texto:hover {
+  background: violet;
+  border: 2px solid blue;
+}
+
+a:link {
+  color: red;
+}
+
+a:visited {
+  color: violet;
+}
+
+.caja {
+  background: red;
+  width: 300px;
+  height: 300px;
+}
+
+.caja:active {
+  background: violet;
+}
+
+input:focus {
+  background: yellow;
+}
+
+.caja b:lang(en){
+  background: yellow;
+} */
+
+/* Object Fit */
