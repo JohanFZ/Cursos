@@ -204,7 +204,7 @@ font-size: 40px;
 
 /* Float */
 
-.contenedor {
+/* .contenedor {
   border: 2px solid red;
   width: 80%;
   margin: auto;
@@ -221,7 +221,45 @@ font-size: 40px;
 
 .contenedor p {
   padding: 40px;
+} */
+
+/* Pseudoelementos */
+
+.contenedor {
+  padding: 20px;
 }
 
+.contenedor::first-line {
+  background: red;
+}
+
+.contenedor::first-letter {
+  color: blue;
+  font-size: 35px;
+}
+
+input {
+  padding: 6px;
+}
+
+input::placeholder {
+  color: red;
+  font-size: 15px;
+}
+
+input::selection {
+  color: red;
+  background: yellow;
+}
+
+b::before {
+  content: 'Hola soy ';
+}
+
+b::after {
+  content: ' Forero Orozco';
+}
+
+/* Pseudoclases */
 
 
