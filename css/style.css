@@ -178,16 +178,29 @@ div {
 
 /* Position: Fixed */
 
-div {
-  font-size: 40px;
-}
+/* div {
+font-size: 40px;
+} */
 
-.content-fixed {
+/* .content-fixed {
   position: fixed;
   background: red;
   opacity: 0.2;
-}
+} */
 
+/* Overflow */
+
+div {
+  font-size: 40px;
+  margin: auto;
+  margin-top: 50px;
+  width: 320px;
+  height: 350px;
+  border: 4px solid red;
+  background: gray;
+  overflow-x: scroll;
+  overflow-y: hidden;
+}
 
 
 
