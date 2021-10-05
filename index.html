@@ -6,6 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="./css/style.css">
   <link rel="stylesheet" href="./css/normalize.css">
+  <script src="https://kit.fontawesome.com/05dbb22d87.js" crossorigin="anonymous"></script>
   <title>Curso CSS</title>
 </head>
 <body>
@@ -92,8 +93,8 @@
     </div>
   </div> -->
 
-  <div class="caja">
-    <!-- <img src="https://pbs.twimg.com/profile_images/1062767896269590528/vOsDt9up.jpg" alt=""> -->
+  <!-- <div class="caja">
+    <img src="https://pbs.twimg.com/profile_images/1062767896269590528/vOsDt9up.jpg" alt="">
     <h1>Este es el titulo de la plataforma</h1>
     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic commodi harum, quibusdam cum voluptas delectus aspernatur, itaque in, eveniet veritatis illum totam sit! Ut fugiat inventore esse, alias ipsa vitae?</p>
   </div>
@@ -101,7 +102,29 @@
   <div>
     <h2>Este es el titulo de la noticia</h2>
     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore qui saepe, nemo ipsam odio accusamus minus veniam, enim fugiat possimus asperiores iure aut in, quaerat sed! Odio, sapiente. Laborum, tempore?</p>
-  </div>
+  </div> -->
+
+  <header>
+    <nav class="nav">
+      <ul class="nav__ul">
+        <li class="nav__li"><i class="fas fa-igloo"></i><a href="#">Inicio</a></li>
+        <li class="nav__li fas"><i class="fas fa-user-friends"></i><a href="#">Sobre Nosotros</a></li>
+        <li class="nav__li"><i class="fas fa-id-badge"></i><a href="#">Contacto</a></li>
+        <li class="nav__li"><i class="fas fa-question-circle"></i><a href="#">Ayuda</a></li>
+      </ul>
+      <ul class="nav__responsive-ul">
+        <div class="nav__responsive-button-container">
+          <div class="nav__responsive-button fas fa-bars"></div>
+        </div>
+        <div class="nav__li-container">
+          <li class="nav__responsive-li"><i class="fas fa-igloo"></i><a href="#">Inicio</a></li>
+          <li class="nav__responsive-li"><i class="fas fa-user-friends"></i><a href="#">Sobre Nosotros</a></li>
+          <li class="nav__responsive-li"><i class="fas fa-id-badge"></i><a href="#">Contacto</a></li>
+          <li class="nav__responsive-li"><i class="fas fa-question-circle"></i><a href="#">Ayuda</a></li>
+        </div>
+      </ul>
+    </nav>
+  </header>
 
 
 </body>

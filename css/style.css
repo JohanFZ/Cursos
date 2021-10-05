@@ -3,6 +3,7 @@
 * {
   padding: 0px;
   margin: 0px;
+  font-family:Arial, Helvetica, sans-serif;
 }
 
 /* Selectores */
@@ -324,7 +325,7 @@ input:focus {
 
 /* Responsive Design */
 
-div {
+/* div {
   width: 45%;
   display: inline-block;
   padding: 20px;
@@ -341,4 +342,109 @@ h1 {
     display: block;
     width: 100%;
   }
+} */
+
+/* Menu responsivo */
+
+.nav__responsive-ul {
+  display: none;
+}
+
+.nav {
+  background: slateblue;
+}
+
+.nav__li {
+  display: inline-block;
+  padding: 11px;
+  color: #fff;
+}
+
+.nav__li:hover > a {
+  color: #bbb;
+}
+
+.nav__li:hover > i {
+  color: #bbb;
+}
+
+.nav__li a {
+  color: #fff;
+  padding: 5px;
+  text-decoration: none;
+}
+
+.nav__li i {
+  box-sizing: border-box;
+  text-align: right;
+  margin-left: 5px;
+}
+
+.nav__responsive-button-container {
+  position: absolute;
+  width: 100%;
+  font-size: 25px;
+  background: #48e;
+  margin-top: -37px;
+  z-index: 100;
+}
+
+.nav__responsive-button{
+  padding: 6px 20px;
+  text-align: right;
+  width: 100%;
+}
+
+
+
+@media only screen and (max-width: 500px){
+  .nav__ul {
+    display: none;
+  }
+
+  .nav {
+    height: 37px;
+    width: 100%;
+  }
+
+  .nav__responsive-ul{
+    display: block;
+    position: absolute;
+    width: 100%;
+    background: #fff;
+    height: 37px;
+    margin-top: 37px;
+  }
+
+  .nav__li-container {
+    position: relative;
+    top: -1000%;
+    height: calc(100vh -37px);
+    background: #48e;
+    transition: all 1s;
+
+  }
+
+  .nav__responsive-li {
+    width: 100%;
+    padding: 9px 20px;
+  }
+
+  .nav__responsive-li i {
+    box-sizing: border-box;
+    text-align: center;
+    margin-right: 5px;
+    width: 30px;
+    color: #fff;
+  }
+
+  .nav__responsive-li a {
+    text-decoration: none;
+    color: #fff;
+  }
+
+  .nav__responsive-ul:hover > .nav__li-container {
+    top:0px;
+  }
+
 }
