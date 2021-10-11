@@ -1,0 +1,19 @@
+div {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.cupcake {
+  width: 150px;
+  height: 350px;
+  background: gray;
+  margin: 20px;
+  padding: 10px;
+}
+
+.cupcake img {
+  width: 150px;
+  height: 150px;
+  object-fit: scale-down;
+}
