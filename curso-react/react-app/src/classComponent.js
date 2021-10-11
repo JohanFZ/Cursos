@@ -1,10 +1,13 @@
 import React, { useState } from 'react'
+import './Cupcake.css'
 
-const Cupcake = (sabor, color, foto) => {
+function Cupcake({color, sabor, foto}) {
 
-const vender = () => {
-  console.log('hola');
-}
+  const [estado, setEstado] = useState(false);
+
+  const vender = () => {
+    setEstado(true)
+  }
 
   return (
     <div className="content">
@@ -14,11 +17,11 @@ const vender = () => {
         <p>{`Sabor : ${sabor}`}</p>
         <p>
           <b>Estado : </b>
-          {vendido ? "Vendido" : "A la venta"} {/*Validacion Terniaria*/}
+          {estado ? "Vendido" : "A la venta"} {/*Validacion Terniaria*/}
         </p>
         {/* Renderizado Condicional */}
         {
-          !vendido && <button onClick={vender}>Vender</button>
+          !estado && <button onClick={vender}>Vender</button>
         }
       </div>
     </div>
