@@ -1,12 +1,22 @@
-import React, { useState } from 'react'
+import React, { useState, useEffect } from 'react'
 import './Cupcake.css'
 
 function Cupcake({color, sabor, foto}) {
 
   const [estado, setEstado] = useState(false);
+  const [reservado, setReservado] = useState(false);
+
+  useEffect(() => {
+    console.log("Hola")
+  }, [reservado]);
 
   const vender = () => {
     setEstado(true)
+    setReservado(true)
+  }
+
+  const reservar = () => {
+    setReservado(true)
   }
 
   return (
@@ -22,6 +32,15 @@ function Cupcake({color, sabor, foto}) {
         {/* Renderizado Condicional */}
         {
           !estado && <button onClick={vender}>Vender</button>
+        }
+
+        <p>
+          <b>Estado : </b>
+          {reservado ? "Reservado" : "Libre"} {/*Validacion Terniaria*/}
+        </p>
+        {/* Renderizado Condicional */}
+        {
+          !reservado && <button onClick={reservar}>Reservar</button>
         }
       </div>
     </div>
