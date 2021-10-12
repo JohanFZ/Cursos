@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react'
+import React, { useState, useEffect, useRef } from 'react'
 import './Cupcake.css'
 
 function Cupcake({color, sabor, foto}) {
@@ -6,8 +6,13 @@ function Cupcake({color, sabor, foto}) {
   const [estado, setEstado] = useState(false);
   const [reservado, setReservado] = useState(false);
 
+  const fotoCupcake = useRef();
+
   useEffect(() => {
-    console.log("Hola")
+    if(reservado){
+      const elemt = fotoCupcake.current;
+      elemt.classList.add("vendido");
+    }
   }, [reservado]);
 
   const vender = () => {
@@ -22,7 +27,7 @@ function Cupcake({color, sabor, foto}) {
   return (
     <div className="content">
       <div className="cupcake">
-        <img src={foto} alt="" />
+        <img ref={fotoCupcake} src={foto} alt="" />
         <h2>Color : {color}</h2>
         <p>{`Sabor : ${sabor}`}</p>
         <p>

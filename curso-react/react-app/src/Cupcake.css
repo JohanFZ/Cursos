@@ -6,7 +6,7 @@ div {
 
 .cupcake {
   width: 150px;
-  height: 400px;
+  height: 410px;
   background: gray;
   margin: 20px;
   padding: 10px;
@@ -16,4 +16,8 @@ div {
   width: 150px;
   height: 150px;
   object-fit: scale-down;
+}
+
+.vendido {
+  filter: grayscale();
 }
