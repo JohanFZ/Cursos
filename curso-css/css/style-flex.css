@@ -1,0 +1,22 @@
+* {
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 100;
+}
+
+.flex-container {
+  display: flex;
+  flex-direction: row-reverse;
+}
+
+.flex-item {
+  background: #248;
+  color: #fff;
+  padding: 10px;
+  margin: 5px;
+  height: 120px;
+  width: 120px;
+}
+
+.orange {
+  background: orange;
+}
