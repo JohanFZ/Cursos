@@ -5,7 +5,8 @@
 
 .flex-container {
   display: flex;
-  flex-direction: row-reverse;
+  /* justify-content: space-evenly; */
+  height: 100vh;
 }
 
 .flex-item {
@@ -15,8 +16,15 @@
   margin: 5px;
   height: 120px;
   width: 120px;
+  text-align: center;
+  /* margin-left: auto; */
+  flex-grow: 1;
 }
 
 .orange {
   background: orange;
 }
+
+/* .flex-container div:nth-child(2n) {
+  align-self: flex-end;
+} */
