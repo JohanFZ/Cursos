@@ -12,17 +12,22 @@
 .flex-item {
   background: #248;
   color: #fff;
-  padding: 10px;
+  /* padding: 10px; */
   margin: 5px;
+  min-width: 150px;
   height: 120px;
-  width: 120px;
   text-align: center;
   /* margin-left: auto; */
   flex-grow: 1;
+  width: 300px;
+
 }
 
 .orange {
   background: orange;
+  /* flex-basis: 200px; */
+  flex-shrink: 3;
+  order: 4;
 }
 
 /* .flex-container div:nth-child(2n) {
