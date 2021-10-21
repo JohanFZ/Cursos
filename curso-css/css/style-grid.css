@@ -11,7 +11,7 @@ body {
 .grid-container {
   display: grid;
   grid-template-columns: repeat(3, minmax(120px, 1fr));
-  grid-template-rows: 150px 150px 150px;
+  grid-template-rows: [f-line] 150px [s-line] 150px [t-line] 150px [l-line];
   border: 1px solid #000;
   /* grid-gap: 10px; */
   grid-row-gap: 10px;
@@ -23,7 +23,6 @@ body {
   justify-content: space-around;
   align-items: center;
   align-content: center;
-
 }
 
 .grid-item {
@@ -114,13 +113,7 @@ img:nth-child(16) {
   background: #444;
   margin: 10px;
   display: grid;
-  grid-template-areas:
-  "header header header"
-  "aside main main"
-  "aside main main"
-    "aside main main"
-  "aside main main"
-  "footer footer footer";
+  grid-template-areas: "header header header" "aside main main" "aside main main" "aside main main" "aside main main" "footer footer footer";
   grid-template-rows: repeat(auto-fill, 1fr);
   height: 92vh;
 }
@@ -148,4 +141,3 @@ img:nth-child(16) {
   background: #f90;
   grid-area: header;
 }
-
