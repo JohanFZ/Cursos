@@ -113,15 +113,22 @@
   background: lightcyan;
   height: 100px;
   width: 100px;
-  transition-property: background, left;
+  /* transition-property: background, left;
   transition-duration: 1s;
-  /* transition-delay: 3s; */
+  transition-delay: 3s;  */
   margin: 30px;
+  /* position: relative;
+  left: 0; */
   position: relative;
-  left: 0;
+  /* animation-name: desplazamiento;
+  animation-duration: 2s;
+  animation-iteration-count: 3;
+  animation-direction: alternate;
+  animation-fill-mode: forwards;
+  animation-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1); */
 }
 
-.container:hover > .caja {
+/* .container:hover > .caja {
   background: lightgreen;
   left: 80%;
 }
@@ -144,4 +151,20 @@
 
 .caja:nth-child(5) {
   transition-timing-function: ease-in-out;
+} */
+
+/* Animaciones */
+
+@keyframes desplazamiento {
+  0% {
+    left: 0;
+    background: #025;
+  }
+  50% {
+    background: lightskyblue;
+  }
+  100% {
+    left: 80%;
+    background: lightcyan;
+  }
 }
