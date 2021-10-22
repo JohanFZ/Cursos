@@ -110,7 +110,7 @@
 }
 
 .caja {
-  background: lightcyan;
+  background: #000;
   height: 100px;
   width: 100px;
   /* transition-property: background, left;
@@ -126,6 +126,8 @@
   animation-direction: alternate;
   animation-fill-mode: forwards;
   animation-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1); */
+  /* transform: translate(100%, 100%) scale(0.2) skew(40deg); */
+  clip-path: polygon(9% 70%, 90% 71%, 100% 100%, 0% 100%);
 }
 
 /* .container:hover > .caja {
