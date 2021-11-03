@@ -1,5 +1,19 @@
-body {
-  font-family: 'Arial';
+//importacion de modulos
+
+@use 'variables';
+
+//Declarar Variables
+
+$primary: red;
+
+h1 {
+  color: $primary;
 }
 
+p {
+  color: variables.$secundary;
+}
 // sass --watch sass:css
+
+/* Este comentario si compila */
+
