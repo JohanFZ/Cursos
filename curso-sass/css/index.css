@@ -1,11 +1,31 @@
-h1 {
+:root {
+  --secundary: #000;
+}
+
+h2 {
   color: red;
+}
+
+body h1 {
+  font-size: 4rem;
+  color: green;
+}
+
+h1 {
+  color: green;
 }
 
 p {
   color: #000;
 }
 
+.title {
+  color: var(--secundary);
+}
+
 /* Este comentario si compila */
+div {
+  font-size: 48px;
+}
 
 /*# sourceMappingURL=index.css.map */

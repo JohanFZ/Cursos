@@ -6,6 +6,19 @@
 
 $primary: red;
 
+h2 {
+  color: $primary;
+}
+
+body {
+  //Nesting o anidamiento
+  $primary: green !global;
+  h1{
+    font-size: 4rem;
+    color: $primary;
+  }
+}
+
 h1 {
   color: $primary;
 }
@@ -13,7 +26,19 @@ h1 {
 p {
   color: variables.$secundary;
 }
+
+.title {
+  color: var(--secundary);
+}
+
 // sass --watch sass:css
 
 /* Este comentario si compila */
 
+//Operaciones en variables
+
+$size: 24px*2;
+
+div{
+  font-size: $size;
+}

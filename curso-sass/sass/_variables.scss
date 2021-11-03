@@ -1,1 +1,5 @@
 $secundary : #000;
+
+:root {
+  --secundary: #{$secundary};
+}
