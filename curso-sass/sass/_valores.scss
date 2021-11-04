@@ -1,0 +1,35 @@
+@use 'sass:math';
+@use 'sass:string';
+@use 'sass:meta';
+
+/* Numeros */
+
+$variables: 2; //Entero
+$pixeles: 3px; //Unidades
+
+@debug 100*100;
+
+$division: 10px / 2;
+
+body {
+  animation-duration: $division;
+  font-size: math.div(4,5) * 1px;
+}
+
+//quoted string '' ""
+//unquoted string
+
+$selector: "h1";
+$strings-comillas: "header header header";
+$strinfsincomillas: center;
+
+#{$selector}{
+  color: yellow;
+}
+
+.grid {
+  grid-template-columns: string.unquote($strings-comillas);
+  grid-template-columns: string.quote($strinfsincomillas);
+}
+
+@debug meta.type-of($strings-comillas)

@@ -12,6 +12,21 @@
   text-align: center;
 }
 
+/* Numeros */
+body {
+  animation-duration: 5px;
+  font-size: 0.8px;
+}
+
+h1 {
+  color: yellow;
+}
+
+.grid {
+  grid-template-columns: header header header;
+  grid-template-columns: "center";
+}
+
 h2 {
   color: red;
 }
@@ -83,7 +98,5 @@ input:checked + .word {
     display: grid;
   }
 }
-
-/* Numeros */
 
 /*# sourceMappingURL=index.css.map */
