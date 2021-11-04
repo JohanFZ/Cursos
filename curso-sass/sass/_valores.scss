@@ -2,7 +2,7 @@
 @use 'sass:string';
 @use 'sass:meta';
 @use 'sass:list';
-
+@use 'sass:map';
 /* Numeros */
 
 $variables: 2; //Entero
@@ -14,7 +14,7 @@ $division: 10px / 2;
 
 body {
   animation-duration: $division;
-  font-size: math.div(4,5) * 1px;
+  font-size: math.div(4,5) * 30px;
 }
 
 //quoted string '' ""
@@ -45,3 +45,15 @@ $boxshadow: 1px 1px 20px;
   margin-top: list.nth($boxshadow, 3);
 }
 
+/* MAPAS */
+
+$colores: (
+  "key": red,
+  "primary": blue,
+);
+
+body {
+  background: map.get($colores, "primary");
+}
+
+//Booleanos

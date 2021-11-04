@@ -15,7 +15,7 @@
 /* Numeros */
 body {
   animation-duration: 5px;
-  font-size: 0.8px;
+  font-size: 24px;
 }
 
 h1 {
@@ -29,6 +29,11 @@ h1 {
 
 .grid {
   margin-top: 20px;
+}
+
+/* MAPAS */
+body {
+  background: blue;
 }
 
 h2 {
