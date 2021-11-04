@@ -1,0 +1,13 @@
+//Parent Element
+
+.card{
+  color: teal;
+
+  &:hover{
+    color: red;
+  }
+
+  &__title{//usar metologia BEM
+    text-align: center;
+  }
+}

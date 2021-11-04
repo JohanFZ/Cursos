@@ -1,6 +1,7 @@
 //importacion de modulos
 
 @use 'variables';
+@use 'nesting';
 
 //Declarar Variables
 
@@ -111,3 +112,5 @@ input:checked{
     display: grid;
   }
 }
+
+/* Numeros */

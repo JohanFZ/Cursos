@@ -2,6 +2,16 @@
   --secundary: #000;
 }
 
+.card {
+  color: teal;
+}
+.card:hover {
+  color: red;
+}
+.card__title {
+  text-align: center;
+}
+
 h2 {
   color: red;
 }
@@ -68,11 +78,12 @@ input:checked + .word {
 .menu ~ .card {
   display: flex;
 }
-
 @media screen and (min-width: 500px) {
   .menu {
     display: grid;
   }
 }
+
+/* Numeros */
 
 /*# sourceMappingURL=index.css.map */
