@@ -36,6 +36,10 @@ body {
   background: blue;
 }
 
+.grid {
+  display: grid;
+}
+
 h2 {
   color: red;
 }
