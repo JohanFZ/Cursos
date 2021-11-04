@@ -42,3 +42,14 @@ $size: 24px*2;
 div{
   font-size: $size;
 }
+
+//Interpolacion
+
+$selector: '.hero';
+$propiedad: 'font-size';
+$rem: 16;
+
+#{$selector}{
+  color: lightcoral;
+  #{$propiedad}: $rem * 1rem;
+}
