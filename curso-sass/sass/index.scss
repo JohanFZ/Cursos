@@ -53,3 +53,34 @@ $rem: 16;
   color: lightcoral;
   #{$propiedad}: $rem * 1rem;
 }
+
+//Nesting
+
+.hero {
+  background-color: red;
+
+  nav{
+    display: flex;
+  }
+
+  .container {
+    background: lightgrey;
+
+    a {
+      text-decoration: none;
+
+      span{
+        font-size: 20px;
+      }
+    }
+
+  }
+}
+
+.hero, .main {
+  color: black;
+
+  .title {
+    font-size: 2em;
+  }
+}

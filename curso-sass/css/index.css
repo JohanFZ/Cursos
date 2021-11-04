@@ -33,4 +33,27 @@ div {
   font-size: 16rem;
 }
 
+.hero {
+  background-color: red;
+}
+.hero nav {
+  display: flex;
+}
+.hero .container {
+  background: lightgrey;
+}
+.hero .container a {
+  text-decoration: none;
+}
+.hero .container a span {
+  font-size: 20px;
+}
+
+.hero, .main {
+  color: black;
+}
+.hero .title, .main .title {
+  font-size: 2em;
+}
+
 /*# sourceMappingURL=index.css.map */
