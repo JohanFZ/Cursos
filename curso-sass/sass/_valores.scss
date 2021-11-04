@@ -1,6 +1,7 @@
 @use 'sass:math';
 @use 'sass:string';
 @use 'sass:meta';
+@use 'sass:list';
 
 /* Numeros */
 
@@ -32,4 +33,15 @@ $strinfsincomillas: center;
   grid-template-columns: string.quote($strinfsincomillas);
 }
 
-@debug meta.type-of($strings-comillas)
+@debug meta.type-of($strings-comillas);
+
+//Listas
+
+$boxshadow: 1px 1px 20px;
+
+@debug meta.type-of($boxshadow);
+
+.grid{
+  margin-top: list.nth($boxshadow, 3);
+}
+
