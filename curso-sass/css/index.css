@@ -56,4 +56,23 @@ div {
   font-size: 2em;
 }
 
+/*Selectores*/
+.card > .item {
+  display: none;
+}
+
+input:checked + .word {
+  color: blue;
+}
+
+.menu ~ .card {
+  display: flex;
+}
+
+@media screen and (min-width: 500px) {
+  .menu {
+    display: grid;
+  }
+}
+
 /*# sourceMappingURL=index.css.map */

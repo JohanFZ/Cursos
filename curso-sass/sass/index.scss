@@ -84,3 +84,30 @@ $rem: 16;
     font-size: 2em;
   }
 }
+
+/*Selectores*/
+
+.card > { //Hijo directo
+
+  .item{
+    display: none;
+  }
+}
+
+input:checked{
+  +.word{//Hermano adyacente
+    color: blue;
+  }
+}
+
+.menu{
+  ~{
+    .card {
+      display: flex;
+    }
+  }
+
+  @media screen and (min-width:500px) {
+    display: grid;
+  }
+}
